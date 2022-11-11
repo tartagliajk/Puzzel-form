@@ -1,0 +1,160 @@
+<!--Nina, Viktor, Eskil-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form using Table in HTML</title>
+    <link rel="stylesheet" href="PersonForm3.css">
+</head>
+
+<body>
+    <h2>Student Registration Form Using Table in HTML</h2>
+        <form>
+        <table align="center" cellpadding="10">
+            <!--First Name-->
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Maryam"/>
+                    <br>(Max 50 Characters Allowed)
+                </td>
+            </tr>
+
+            <!--Last Name-->
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="LastName" maxlength="50" placeholder="Reazee"/>
+                    <br>(Max 50 Characters Allowed)
+                </td>
+            </tr>
+
+            <!--Gender-->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="Gender" value="Male"/>
+                    Male
+                    <input type="radio" name="Gender" value="Female"/>
+                    Female
+                    <input type="radio" name="Gender" value="Attack-Helicopter"/>
+                    Attack-Helicopter
+                </td>
+            </tr>
+
+            <!--Email ID-->
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="EmailID" maxlength="100" placeholder="maryam@yahoo.com"/>
+                    <br>(Max 100 Characters Allowed)
+                </td>
+            </tr>
+
+            <!--Mobile Number-->
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="text" name="MobileNumber" maxlength="10" placeholder="012345678"/>
+                    <br>(10 Digits Allowed)
+                </td>
+            </tr>
+
+            <!--Pin Code-->
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="number" name="PinCode" maxlength="6" placeholder="123456"/>
+                <br>(Max 6 Numbers Allowed)
+                </td>
+            </tr>
+
+            <!--Country-->
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="Country" placeholder="Sweden"/></td>
+            </tr>
+
+            <!--City-->
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="City" maxlength="50" placeholder="Gothenburg"/>
+                    <br>(Max 50 Characters Allowed)
+                </td>
+            </tr>
+
+            <!--Adress-->
+            <tr>
+                <td>Adress <br><br><br></td>
+                <td><textarea name="Adress" cols="50" rows="10"></textarea></td>
+            </tr>
+
+            <!--Hobbies-->
+            <tr>
+                <td>Hobbies <br><br><br></td>
+                <td>
+                    <input type="checkbox" name="HobbyDrawing" value="Drawing"/>
+                    Drawing
+                    <input type="checkbox" name="HobbySinging" value="Singing"/>
+                    Singing
+                    <input type="checkbox" name="HobbyDancing" value="Dancing"/>
+                    Dancing
+                    <input type="checkbox" name="HobbyCooking" value="Cooking"/>
+                    Cooking
+                    <br>
+                    <input type="checkbox" name="HobbyOther" value="Other">
+                    Others
+                    <input type="text" name="OtherHobby" maxlength="50" placeholder="Ex- Carpentry" />
+                    <br>(Max 50 Characters Allowed)
+                </td>
+            </tr>
+            <!-----------------------------Qualification------------------------------------------>
+            <tr>
+                <td>Qualification <br/><br/><br></td>
+                <td>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="HighSchool" value="High School" />
+                    High School(10th)<br>
+                    <input type="checkbox" name="HigherSchool" value="Higher School" />
+                    Higher School(12th)<br />
+                    <input type="checkbox" name="Graduation" value="Graduation" />
+                        Graduation(Bachelors)<br />
+                        <input type="checkbox" name="PostGraduation" value="Post Graduation" />
+                        PostGraduation(Masters)<br />
+                        <input type="checkbox" name="Phd" value="Phd">
+                        Phd
+                    </td>
+                </tr>
+                <!------------------------------------Courses------------------------------------------->
+                <tr>
+                    <td>Courses Applied For</td>
+                    <td>
+                        <input type="radio" name="Course" value="BCA">
+                        BCA(Bachelor of Computer Applications)<br>
+                        <input type="radio" name="Course" value="B.Com">
+                        B.Com(Bachelor of Commerce)<br>
+                        <input type="radio" name="Course" value="B.Sc">
+                        B.Sc(Bachelor of Science) <br>
+                        <input type="radio" name="Course" value="B.A">
+                        BA(Bachelor of Arts)<br>
+                        <input type="radio" name="Course" value="BCA">
+                        MCA(Master of Computer Applications)<br>
+                        <input type="radio" name="Course" value="B.Com">
+                        M.Com(Master of Commerce)<br>
+                        <input type="radio" name="Course" value="B.Sc">
+                        M.Sc(Master of Science)<br>
+                        <input type="radio" name="Course" value="B.A">
+                        MA(Master of Arts)<br>
+                    </td>
+                </tr>
+                <!----------------------------------Submit and Reset----------------------------------------->
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>
